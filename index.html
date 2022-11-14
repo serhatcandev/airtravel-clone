@@ -4,17 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Title -->
+    <title>AirTravel Website</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Container -->
     <div class="container">
       <!-- Top Bar -->
       <div class="top-bar">
-        <h3>Introducing to new AirTravel</h3>
+        <h3 class="intro">Introducing the new AirTravel</h3>
         <p>Learn More</p>
       </div>
+      <!-- End Top Bar -->
+
+      <!-- Navbar -->
+      <div class="navbar">
+        <div>
+          <h1>AirTravel</h1>
+        </div>
+        <div class="search">
+          <form>
+            <div class="input-container">
+              <input type="text" placeholder="Search Properties" />
+            </div>
+            <div>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </form>
+        </div>
+        <div class="menu">
+          <ul class="nav-menu active">
+            <li><a href="#" class="nav-links">Listings</a></li>
+            <li><a href="#" class="nav-links">Feature</a></li>
+            <li><a href="#" class="nav-links">Popular</a></li>
+          </ul>
+          <div onclick="mobileMenu()" class="mobile">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar -->
     </div>
+
+    <script>
+      const menuBtn = document.querySelector(".mobile");
+      const navMenu = document.querySelector(".nav-menu");
+
+      const mobileMenu = () => {
+        menuBtn.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      };
+
+      const closeMenu = () => {
+        navMenu.classList.toggle("active");
+      };
+    </script>
   </body>
 </html>
