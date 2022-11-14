@@ -90,7 +90,8 @@ a {
 
 .search input::selection,
 .search input:enabled,
-.search input:active {
+.search input:active,
+.search input:focus {
     border: none;
     outline: none;
 }
@@ -117,3 +118,5 @@ a {
     cursor: pointer;
     display: none;
 }
+
+/* Navbar End */
