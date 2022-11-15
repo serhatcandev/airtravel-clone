@@ -74,6 +74,7 @@ a {
     color: #ff385c;
     font-size: 24px;
     text-transform: lowercase;
+    cursor: pointer;
 }
 
 .search {
@@ -110,6 +111,7 @@ a {
 .search i {
     color: #ff385c;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .menu {
@@ -123,6 +125,11 @@ a {
 .nav-menu li {
     margin-left: 1.2rem;
     font-size: 0.8rem;
+}
+
+.nav-menu li a:hover {
+    transition: .3s all;
+    color: #ff385c;
 }
 
 .mobile {
@@ -141,6 +148,16 @@ a {
     text-align: center;
     color: #5e5e5e;
     padding: 1rem 0rem;
+}
+
+.sort-bar div {
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.sort-bar div:hover {
+    color: #ff385c;
+    scale: 0.95;
 }
 
 .sort-bar i {
@@ -173,6 +190,12 @@ a {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.listings .card img:hover {
+    scale: 0.95;
 }
 
 .listings .card .card-title {
@@ -215,6 +238,7 @@ a {
 .featured-wrapper .main {
     grid-column: span 3;
     grid-row: span 2;
+    cursor: pointer;
 }
 
 .featured-wrapper .main img {
@@ -227,6 +251,12 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
+}
+
+.featured-wrapper div img:hover {
+    scale: 0.95;
+    transition: .5s all;
 }
 
 /* Feature End */
@@ -235,6 +265,11 @@ a {
 
 .center {
     display: flex;
+}
+
+.center i:hover {
+    transition: .3s all;
+    color: #ff385c;
 }
 
 .center a {
@@ -268,6 +303,12 @@ a {
 .footer .right-menu li {
     padding-left: 16px;
     cursor: pointer;
+    transition: .3s all;
+}
+
+.footer .left-menu li:hover,
+.footer .right-menu li:hover {
+    color: #ff385c;
 }
 
 /* Responsive */
