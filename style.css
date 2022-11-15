@@ -269,3 +269,85 @@ a {
     padding-left: 16px;
     cursor: pointer;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 940px) {
+    .top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar {
+        grid-template-columns: repeat(2, 1fr);
+        border-bottom: none;
+    }
+
+    .navbar .search {
+        width: 100%;
+        padding: 10px 0;
+        order: 3;
+        grid-column: span 2;
+    }
+
+    .search form {
+        max-width: 100%;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        background-color: #fff;
+        flex-direction: column;
+        top: 80px;
+        height: 100%;
+        width: 100%;
+        transition-duration: 0.3s;
+        padding-top: 1rem;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .listings {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    /* Top Bar */
+    .top-bar .intro,
+    p {
+        font-size: 0.8rem;
+    }
+
+    .listings {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-wrapper {
+        --gap: 1rem;
+        --num-cols: 2;
+    }
+
+    .featured .main {
+        grid-column: span 2;
+    }
+
+    .footer .left-menu,
+    .right-menu {
+        flex-direction: column;
+    }
+}
